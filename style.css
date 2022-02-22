@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&display=swap');
+
+
+
+* {
+  font-family: "Quicksand", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box
+}
+
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 8px;
+  font-size:  20px;
+  background-color: white;
+  text-align: center;
+
+  box-shadow: 0 2px 2px 1px rgba(0,0,0,.13);
+}
+
+header > div.banner {
+  display: flex;
+  font-weight: bold;
+  color: #4e4e4e;
+}
+
+header > div.banner > h1:nth-child(2) {
+  color: red;
+}
+
+/** Navigation */
+nav > ul {  
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin-left: 16px;
+  list-style-type:  none;
+}
+
+nav a {
+   font-size:  18px;
+   font-weight:  400;
+   text-decoration: none; 
+   color:  #4e4e4e;
+}
+
+/** Uncomment dan lihat perubahannya :) */
+nav a:hover {
+  padding: 8px;
+  color: red;
+  font-weight: bold;
+}
+
+
+/ main page /
+main {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/** article page in main **/
+main > article {
+  flex: 0 0 600px;
+}
+
+section.content, section.lists {
+  border: solid 1px grey;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 4px;
+}
+
+section.content > h1, section.lists > h1 {
+  text-align: center; 
+  margin: 10px;
+}
+
+section.content > p {
+  margin-top: 10px;
+  text-align: justify; 
+}
+
+section.lists > .cats-list {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+
+  /** Uncomment ini dan lihat perubahannya **/
+  flex-wrap: wrap;
+}
+
+figure.img-article {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+figure.img-article > img {
+  display: block;
+  max-width: 400px; 
+  border-radius: 4px;
+}
+
+
+figure.img-article > figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+figure.cat-figure {
+  flex: 200px;
+}
+
+figure.cat-figure > img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+figure.cat-figure > figcaption {
+  margin: 6px 0 10px;
+  text-align: center;
+}
+
+/** Table Elements **/
+table {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+table, th, td {
+  border: solid 1px orange;
+  border-collapse: collapse;
+}
+
+thead{
+  background-color: orange;
+  color: white;
+}
+
+th, td {
+  padding: 6px;
+}
+
+/** aside page in main **/
+main > aside {
+  flex: 0 0 250px;
+}
+
+aside > section.profile-container {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: solid 1px red;
+  border-radius: 4px;
+  padding: 6px;
+
+}
+
+figure.profile-figure > img {
+  height: 200px;
+  display: block;
+  width: 10%;
+  object-fit: cover;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%
+
+}
+
+figure.profile-figure > figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+.profile-content {
+  margin-top: 20px;
+  word-break: break-all;
+  text-align: center;
+}
+
+/** Footer **/
+footer {
+  padding: 20px;
+  background-color: orange;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+
+ @media only screen and (max-width: 600px){
+
+  figure.img-article {
+    max-width: 400px;
+  }
+
+  figure.img-article > img {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  main {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    padding-right: 16px;
+  }
+
+  main > article, main > aside {
+    flex: 1 1 0;
+  }
+  
+} 
+
+ @media only screen and (max-width: 768px){
+  header {
+    flex-direction: column;
+  }
+
+  header > div.banner, header ul {
+    justify-content: center;
+  }
+} */
+
+@media only screen and (max-width: 900px ){
+  main > article {
+    flex: 60%;
+  }
+
+  main > aside {
+    flex: 40%;
+  }
+} */
